@@ -21,24 +21,14 @@ class ReviewController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Product $product)
     {
-        //
+        return $product;
     }
 
     /**
@@ -48,17 +38,6 @@ class ReviewController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Review $review)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Review  $review
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Review $review)
     {
         //
     }
